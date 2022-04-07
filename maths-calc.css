@@ -1,0 +1,143 @@
+/*Maths Calculator css*/
+* {
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    min-width: 600px;
+    height: 70vh;
+    min-height: 500px;
+    background-color: grey;
+    border: 1px solid black;
+}
+main > h1 {
+    font-size: 1.4em;
+}
+.current-stats {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.difficulty {
+    width: fit-content;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.question-display {
+    background-color: beige;
+    height: 50%;
+    width: 80%;
+}
+
+.q-count {
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+main > input {
+    border: 2px inset black;
+    margin-top: 20px;
+    width: 50%;
+    height: 30px;
+}
+.submit-answer {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+.submit-answer:hover {
+background-color: white ;
+color: black;
+}
+
+/*custom timer bar*/
+.container {
+    width: 80%;
+    min-width: 600px;
+    height: 30px;
+}
+
+
+.progress {
+    border-radius: 30px 30px 0px 0px;
+    height: 100%;
+    width: 5%;
+    background-color: green;
+}
+
+.timer {
+    margin: 0 0 10px 0;
+    border-radius: 0px 0px 30px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    animation-duration: 5980ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+
+@keyframes timer-width {
+    form {width: 100%;}
+    to {width: 1%; background-color: red; border-bottom-left-radius: 10px;}
+}
+
+/*User selection form*/
+.choose-options {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.choose-options h2 {
+    margin: 2px;
+}
+
+form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    padding: 30px 20px;
+    border: 1px solid black;
+}
+
+.user-selections {
+    width: fit-content;
+    height: fit-content;
+    border: 1px ridge black;
+}
+
+form input[type=text] {
+    border: 2px inset black;
+    margin: 20px 0px;
+    width: 100%;
+    height: 30px;
+}
+
+form input[type=submit] {
+    margin-top: 20px;
+    width: 80%;
+    border: 2px inset black;
+    
+}

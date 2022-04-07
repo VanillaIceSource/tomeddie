@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maths-calc.css">
+    <script src="maths-calc.js" defer></script>
+    <title>Mathematical Speedrun Trainer</title>
+</head>
+<body>
+    <!--
+        project name: Mathematical Speedrun Trainer
+        outcome: to train user in various mathematical fields by presenting pusedo randomly generated math formulas which need to be answered in an input field below. this excludes extreme alegrebraic simplification / conversions
+        Element of gamification: 
+        - timer
+        - progress bar
+        - Selectable Difficulty Levels (with pre defined question & time limit) - to be done
+        - or selectable amount of questions and time limit with minimum values - to be done
+        
+    -->
+    
+    <main>
+        <h1>Mathematical SpeedRun - a QuickWay to start the day</h1>
+        <div class="current-stats">                     
+            <div class="user-selections"></div><!--display name-->
+        </div>
+        <div class="a-count"> <!--display corrrectly answered question number--></div>
+        <div class="container">
+            <div class="progress"></div><!--current progress - increment when getting one question correct-->   
+        </div>
+
+        <div class="question-display"></div>
+        
+        <div class="container">
+            <div class="timer"></div><!--timer bar - changes per timer -->
+        </div>
+        <div class="q-count"> <!--display question number--></div>
+        <input type="text" id="user-input">
+        <button class="submit-answer">Submit</button>
+        
+        
+        <!--Initial Setting panel-->
+        <div class="choose-options"> <!--to disapear once use starts - to include countdown once options are selected, aka timer or difficulty level-->
+            <form id="form">
+                <h2>Choose Name</h2>
+                <input type="text" id="name" placeholder="Enter Name">
+                <h2>Choose Difficulty</h2>
+                <div class="difficulty">
+                    <select name="cars" id="difficulty">
+                        <option value="" selected disabled>Please Select</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Expert">Expert</option>
+                      </select>
+                </div>
+                <input type="submit" value="submit" id="submit">
+            </form>
+        </div>
+        
+        
+    </main>
+    
+</body>
+</html>
